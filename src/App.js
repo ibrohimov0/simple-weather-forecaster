@@ -1,10 +1,9 @@
 import './App.css';
+import { DataRouter } from './shared/config/reactRouter';
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <DataRouter />
   );
 }
 

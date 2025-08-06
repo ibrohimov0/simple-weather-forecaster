@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    display: inline-block;
+}
+
+body{
+    background-color: #EEEEEE;
+}
+
+:root{
+    --main-blue: #0EA5E9
+}

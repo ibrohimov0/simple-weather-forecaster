@@ -1,9 +1,9 @@
 import "./style.css"
 
-export default function SettingsPage() {
+export default function ForecastPage() {
     return(
         <div>
-            settings
+            forecast
         </div>
     )
 }

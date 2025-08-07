@@ -1,7 +1,5 @@
-import { MapPin, Sun } from "@phosphor-icons/react"
 import "./style.css"
 import GlassBox from "../../widgets/glassBox"
-import CurrentCity from "../../features/cityName"
 import ChangeTheme from "../../features/theme"
 import ChangeLocation from "../../features/changeLocation"
 

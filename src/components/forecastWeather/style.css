@@ -1,7 +1,7 @@
 .forecastWeather {
     width: 65%;
     background-image: linear-gradient(240deg, var(--main-blue), var(--second-blue));
-    color: var(--white);
+    color: #fff;
 }
 
 .forecastWeather span {

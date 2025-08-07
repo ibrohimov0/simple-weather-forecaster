@@ -1,6 +1,8 @@
 import { MapPin, Sun } from "@phosphor-icons/react"
 import "./style.css"
 import GlassBox from "../../widgets/glassBox"
+import CurrentCity from "../../features/cityName"
+import ChangeTheme from "../../features/theme"
 
 export default function Navbar() {
     return (
@@ -10,11 +12,9 @@ export default function Navbar() {
                 <span>
                     <button>
                         <MapPin weight="bold" className="icon" />
-                        <h2>Tashkent</h2>
+                        <CurrentCity />
                     </button>
-                    <button>
-                        <Sun weight="bold" className="icon" />
-                    </button>
+                    <ChangeTheme/>
                 </span>
             </GlassBox>
         </div>

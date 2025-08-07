@@ -1,8 +1,8 @@
-import { axiosInstance } from "./axiosInstance";
+import { axiosMain } from "./axiosInstance";
 
-export default function getWeather(city) {
-    return axiosInstance.get(`/data/2.5/weather`, {
-        params: { q: city }
+export default function getWeather(location) {
+    return axiosMain.get(`/realtime`, {
+        params: {location: `${location.lat},${location.lon}`}
     }).then(res => res.data).catch(err => {
         console.error("Weather fetch error:", err)
         throw err;

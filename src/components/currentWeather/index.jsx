@@ -4,17 +4,18 @@ import "./style.css"
 import { useWeather } from "../../features/weather";
 import Loader from "../../shared/ui/loader";
 import Error from "../../shared/ui/error/error";
+import CurrentCity from "../../features/cityName";
 
 export default function CurrentWeather() {
-    const { isLoading, error, data } = useWeather("tashkent");
+    const { isLoading, error, data } = useWeather();
     return (
         <GlassBox className="currentWeather">
             {data &&
                 <>
-                    <h2>{data?.name}</h2>
+                    <CurrentCity/>
                     <span>
-                        <h2>{data?.weather?.map(e => e.main)}</h2>
-                        <h1>{Math.round(data?.main?.temp - 273)}<DotOutline /></h1>
+                        <h2>Today</h2>
+                        <h1>{Math.round(data?.data?.values?.temperature)}<DotOutline /></h1>
                     </span>
                 </>
             }

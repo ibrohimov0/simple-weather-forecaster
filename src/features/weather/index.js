@@ -1,10 +1,11 @@
 import { useQuery } from "@tanstack/react-query"
 import getWeather from "../../shared/api/weather"
 
-export const useWeather = (city) => {
+export const useWeather = () => {
+    const location = JSON.parse(localStorage.getItem("location"));
     return useQuery({
-        queryKey: ["weather",city],
-        queryFn: () => getWeather(city),
-        enabled: !!city
+        queryKey: ["weather",location],
+        queryFn: () => getWeather(location),
+        enabled: !!location
     })
 }

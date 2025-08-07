@@ -1,24 +1,24 @@
-.forecastWeather{
+.forecastWeather {
     width: 65%;
-    background-image: linear-gradient(60deg, #0EA5E9, #84d6fc);
-    
+    background-image: linear-gradient(240deg, var(--main-blue), var(--second-blue));
+    color: var(--white);
 }
 
-.forecastWeather span{
+.forecastWeather span {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.forecastWeather ul{
+.forecastWeather ul {
     list-style: none;
     margin-top: 30px;
     margin-left: 20px;
 }
 
-.forecastWeather li{
+.forecastWeather li {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     margin: 10px 0;
 }

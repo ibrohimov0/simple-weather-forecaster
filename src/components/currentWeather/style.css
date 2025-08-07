@@ -4,7 +4,8 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background-image: linear-gradient(60deg, #0EA5E9, #84d6fc);
+    background-image: linear-gradient(60deg, var(--main-blue), var(--second-blue));
+    color: var(--white);
 }
 
 .currentWeather span{

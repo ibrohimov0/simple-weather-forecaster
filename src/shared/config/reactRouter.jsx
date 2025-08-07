@@ -3,27 +3,10 @@ import Loader from '../ui/loader'
 import { Route, Routes } from 'react-router-dom'
 
 const HomePage = lazy(() => import('../../pages/HomePage'));
-const ForecastPage = lazy(() => import('../../pages/ForecastPage'));
-const SettingsPage = lazy(() => import('../../pages/SettingsPage'));
 
 const routes = [
-     {
-        id : 1,
-        path : '/',
-        Element : <HomePage /> 
-    },
     {
-        id : 2,
-        path : '/forecast',
-        Element : <ForecastPage /> 
-    },
-    {
-        id : 3,
-        path : '/settings',
-        Element : <SettingsPage /> 
-    },
-    {
-        id: 4,
+        id: 1,
         path: "/*",
         Element: <HomePage />
     }

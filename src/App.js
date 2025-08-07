@@ -1,9 +1,13 @@
 import './App.css';
+import Navbar from './components/navbar';
 import { DataRouter } from './shared/config/reactRouter';
 
 function App() {
   return (
-    <DataRouter />
+    <div className='App'>
+      <Navbar/>
+      <DataRouter />
+    </div>
   );
 }
 

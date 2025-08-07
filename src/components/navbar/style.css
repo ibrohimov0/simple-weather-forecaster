@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 30px auto;
+    color: var(--black);
+}
+
+.navbar h1 {
+    color: var(--black);
+}
+
+.navbar span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar span button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.navbar span .icon {
+    font-size: 1.7rem;
+}

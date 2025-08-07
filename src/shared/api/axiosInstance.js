@@ -1,10 +1,8 @@
 import axios from 'axios';
 
 export const axiosInstance = axios.create({
-  baseURL: process.env.WEATHER_API,
+  baseURL: process.env.REACT_APP_WEATHER_API,
   params: {
-    appId: process.env.WEATHER_API_KEY,
-    units: "metric",
-    lang: "en"
+    appId: process.env.REACT_APP_WEATHER_API_KEY,
   }
 })

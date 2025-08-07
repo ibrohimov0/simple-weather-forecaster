@@ -1,0 +1,24 @@
+.forecastWeather{
+    width: 65%;
+    background-image: linear-gradient(60deg, #0EA5E9, #84d6fc);
+    
+}
+
+.forecastWeather span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forecastWeather ul{
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.forecastWeather li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}

@@ -9,6 +9,9 @@ function App() {
   if(error) {
     alert("Pls enable location.")
   }
+
+  const theme = window.localStorage.getItem("theme")
+  document.documentElement.setAttribute("data-theme",theme || "light")
   return (
     <div className='App'>
       <Navbar/>

@@ -7,6 +7,7 @@ export default function ChangeTheme() {
         const currentTheme = theme === "dark" ? "light" : "dark"
         document.documentElement.setAttribute("data-theme",currentTheme)
         setTheme(currentTheme)
+        window.localStorage.setItem("theme",currentTheme)
     }
     return (
         <button onClick={changeTheme}>

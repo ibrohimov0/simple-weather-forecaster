@@ -8,8 +8,24 @@
     color: #fff;
 }
 
-.currentWeather span{
+.currentWeather span {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media(max-width: 950px) {
+    .currentWeather {
+        width: 100%;
+        height: 25vh;
+        margin-bottom: 5%;
+    }
+
+    .currentWeather h1 {
+        font-size: 1.6rem;
+    }
+
+    .currentWeather h2 {
+        font-size: 1.5rem;
+    }
 }

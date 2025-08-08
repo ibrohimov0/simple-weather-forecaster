@@ -12,5 +12,5 @@ export default function CurrentCity() {
     if (isLoading || isError) return null;
 
     const city = data?.[0]?.name || "Unknown";
-    return <h2>{city}</h2>;
+    return <h2 style={{fontSize: "1.2rem"}}>{city}</h2>;
 };

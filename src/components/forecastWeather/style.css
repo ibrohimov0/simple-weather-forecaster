@@ -21,4 +21,23 @@
     align-items: center;
     justify-content: space-between;
     margin: 10px 0;
+    border-bottom: .1rem dotted rgba(255, 255, 255);
+}
+
+@media(max-width: 950px) {
+    .forecastWeather {
+        width: 100%;
+    }
+
+    .forecastWeather h1 {
+        font-size: 1.5rem;
+    }
+
+    .forecastWeather h2 {
+        font-size: 1.4rem;
+    }
+
+    .forecastWeather h3 {
+        font-size: 1.3rem;
+    }
 }
